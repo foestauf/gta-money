@@ -1,0 +1,355 @@
+/* Header */
+.header {
+  text-align: center;
+  padding: 32px 0 24px;
+  border-bottom: 2px solid var(--gold);
+  margin-bottom: 24px;
+}
+.header h1 {
+  font-family: Impact, 'Arial Narrow', 'Haettenschweiler', sans-serif;
+  font-size: 42px;
+  color: var(--gold);
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 0 0 4px;
+}
+.header .subtitle {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0 0 16px;
+}
+.money-totals {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+.money-total {
+  font-size: 14px;
+  font-weight: 600;
+}
+.money-total.michael { color: var(--michael); }
+.money-total.franklin { color: var(--franklin); }
+.money-total.trevor { color: var(--trevor); }
+.money-total.combined {
+  color: var(--gold);
+  font-size: 16px;
+}
+.header-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+.reset-btn {
+  background: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+.reset-btn:hover {
+  background: rgba(248, 81, 73, 0.15);
+}
+.map-toggle-btn {
+  background: transparent;
+  border: 1px solid var(--gold);
+  color: var(--gold);
+  padding: 6px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 13px;
+  transition: background 0.2s;
+}
+.map-toggle-btn:hover {
+  background: rgba(240, 192, 64, 0.15);
+}
+.map-loading {
+  text-align: center;
+  padding: 40px;
+  color: var(--text-muted);
+  font-size: 14px;
+}
+
+/* Tips Bar */
+.tips-bar {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+.tips-toggle {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  background: transparent;
+  border: none;
+  color: var(--gold);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+.tips-toggle .arrow {
+  transition: transform 0.2s;
+}
+.tips-toggle .arrow.open {
+  transform: rotate(180deg);
+}
+.tips-list {
+  padding: 0 16px 16px;
+  margin: 0;
+  list-style: none;
+}
+.tips-list li {
+  padding: 8px 0;
+  border-top: 1px solid var(--border);
+  color: var(--text-muted);
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+/* Phase Card */
+.phase-card {
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 12px;
+  overflow: hidden;
+  transition: opacity 0.2s;
+}
+.phase-card.locked {
+  opacity: 0.4;
+  pointer-events: none;
+}
+.phase-card.completed {
+  border-color: var(--green);
+  opacity: 0.7;
+}
+.phase-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 14px 16px;
+  cursor: pointer;
+  user-select: none;
+  gap: 12px;
+}
+.phase-header-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-width: 0;
+}
+.phase-checkbox {
+  width: 20px;
+  height: 20px;
+  accent-color: var(--green);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.phase-header:hover {
+  background: var(--bg-card-hover);
+}
+.phase-title {
+  font-family: var(--heading);
+  font-size: 18px;
+  color: var(--text-heading);
+  flex: 1;
+  margin: 0;
+}
+.phase-card.completed .phase-title {
+  color: var(--green);
+}
+.phase-gate {
+  font-size: 12px;
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+.phase-progress {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  color: var(--text-muted);
+  white-space: nowrap;
+}
+.progress-bar {
+  width: 80px;
+  height: 6px;
+  background: var(--bg-input);
+  border-radius: 3px;
+  overflow: hidden;
+}
+.progress-fill {
+  height: 100%;
+  background: var(--green);
+  border-radius: 3px;
+  transition: width 0.3s;
+}
+.phase-steps {
+  padding: 0 16px 8px;
+}
+
+/* Step Item */
+.step-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 10px 0;
+  border-top: 1px solid var(--border);
+}
+.step-item:first-child {
+  border-top: 1px solid var(--border);
+}
+.step-checkbox {
+  margin-top: 2px;
+  width: 18px;
+  height: 18px;
+  accent-color: var(--green);
+  cursor: pointer;
+  flex-shrink: 0;
+}
+.step-content {
+  flex: 1;
+  min-width: 0;
+}
+.step-title-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+.step-title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--text-heading);
+}
+.step-item.done .step-title {
+  text-decoration: line-through;
+  color: var(--text-muted);
+}
+.step-desc {
+  font-size: 13px;
+  color: var(--text-muted);
+  margin-top: 2px;
+  line-height: 1.4;
+}
+.step-money {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--green);
+  white-space: nowrap;
+}
+.step-money.negative {
+  color: var(--red);
+}
+
+/* Map Icon Badge */
+.map-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 22px;
+  height: 22px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+  line-height: 1;
+}
+.map-icon.icon-M { background: var(--michael); color: #fff; }
+.map-icon.icon-F { background: var(--franklin); color: #000; }
+.map-icon.icon-T { background: var(--trevor); color: #000; }
+.map-icon.icon-Q { background: #9b59b6; color: #fff; }
+.map-icon.icon-L { background: #e74c3c; color: #fff; }
+.map-icon.icon-H { background: var(--gold); color: #000; }
+.map-icon.icon-dollar { background: var(--green); color: #000; }
+
+/* Character stripe */
+.char-stripe {
+  width: 3px;
+  align-self: stretch;
+  border-radius: 2px;
+  flex-shrink: 0;
+}
+.char-stripe.michael { background: var(--michael); }
+.char-stripe.franklin { background: var(--franklin); }
+.char-stripe.trevor { background: var(--trevor); }
+.char-stripe.any { background: var(--text-muted); }
+
+/* Investment Card */
+.investment-info {
+  margin-top: 6px;
+  padding: 8px 10px;
+  background: var(--gold-dim);
+  border-radius: 6px;
+  border: 1px solid rgba(240, 192, 64, 0.25);
+  font-size: 13px;
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+  color: var(--text);
+}
+.investment-info span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+.investment-label {
+  color: var(--text-muted);
+  font-size: 12px;
+}
+
+/* Heist Card */
+.heist-info {
+  margin-top: 6px;
+  padding: 8px 10px;
+  background: rgba(240, 192, 64, 0.08);
+  border-radius: 6px;
+  border: 1px solid rgba(240, 192, 64, 0.2);
+  font-size: 13px;
+}
+.heist-info .heist-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 4px;
+}
+.heist-info .heist-row:last-child {
+  margin-bottom: 0;
+}
+.heist-label {
+  color: var(--gold);
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+/* Completed banner */
+.all-done {
+  text-align: center;
+  padding: 32px 16px;
+  margin-top: 24px;
+}
+.all-done h2 {
+  font-family: var(--heading);
+  font-size: 28px;
+  color: var(--gold);
+  margin: 0 0 8px;
+}
+.all-done p {
+  color: var(--text-muted);
+}
+
+/* Responsive */
+@media (max-width: 500px) {
+  .header h1 { font-size: 28px; letter-spacing: 1px; }
+  .money-totals { gap: 12px; }
+  .phase-title { font-size: 15px; }
+  .progress-bar { width: 50px; }
+}

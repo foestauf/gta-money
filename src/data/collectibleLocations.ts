@@ -1,0 +1,110 @@
+// Collectible locations from community datasets (danharper/GTAV, GTA wiki).
+// These are referenced by step IDs 7-9 (Nuclear Waste) and 7-10 (Briefcases).
+
+import type { GameCoord } from './coordinates';
+
+export interface CollectibleGroup {
+  stepId: string;
+  name: string;
+  icon: string;
+  color: string;
+  locations: GameCoord[];
+}
+
+export const collectibleGroups: CollectibleGroup[] = [
+  {
+    stepId: '7-9',
+    name: 'Nuclear Waste',
+    icon: '☢',
+    color: '#39ff14',
+    locations: [
+      { x: 3082, y: -4690, label: 'Nuclear Waste 1' },
+      { x: 2877, y: -3808, label: 'Nuclear Waste 2' },
+      { x: 2816, y: -3411, label: 'Nuclear Waste 3' },
+      { x: 2978, y: -3124, label: 'Nuclear Waste 4' },
+      { x: 2660, y: -2517, label: 'Nuclear Waste 5' },
+      { x: 2364, y: -2341, label: 'Nuclear Waste 6' },
+      { x: 1777, y: -2838, label: 'Nuclear Waste 7' },
+      { x: 1240, y: -2898, label: 'Nuclear Waste 8' },
+      { x: 637, y: -3046, label: 'Nuclear Waste 9' },
+      { x: -128, y: -3152, label: 'Nuclear Waste 10' },
+      { x: -842, y: -3350, label: 'Nuclear Waste 11' },
+      { x: -1656, y: -3241, label: 'Nuclear Waste 12' },
+      { x: -2406, y: -2897, label: 'Nuclear Waste 13' },
+      { x: -2952, y: -2414, label: 'Nuclear Waste 14' },
+      { x: -3344, y: -1739, label: 'Nuclear Waste 15' },
+      { x: -3485, y: -1043, label: 'Nuclear Waste 16' },
+      { x: -3428, y: -422, label: 'Nuclear Waste 17' },
+      { x: -3315, y: 239, label: 'Nuclear Waste 18' },
+      { x: -3141, y: 1014, label: 'Nuclear Waste 19' },
+      { x: -2970, y: 1800, label: 'Nuclear Waste 20' },
+      { x: -2849, y: 2463, label: 'Nuclear Waste 21' },
+      { x: -2654, y: 3145, label: 'Nuclear Waste 22' },
+      { x: -2317, y: 3850, label: 'Nuclear Waste 23' },
+      { x: -1914, y: 4508, label: 'Nuclear Waste 24' },
+      { x: -1499, y: 5116, label: 'Nuclear Waste 25' },
+      { x: -1074, y: 5704, label: 'Nuclear Waste 26' },
+      { x: -556, y: 6244, label: 'Nuclear Waste 27' },
+      { x: 28, y: 6672, label: 'Nuclear Waste 28' },
+      { x: 722, y: 6941, label: 'Nuclear Waste 29' },
+      { x: 1448, y: 6985, label: 'Nuclear Waste 30' },
+    ],
+  },
+  {
+    stepId: '7-10',
+    name: 'Underwater Briefcases',
+    icon: '💼',
+    color: '#58a6ff',
+    locations: [
+      { x: -3428, y: -422, label: 'Briefcase 1 ($7,500)' },
+      { x: -2953, y: 459, label: 'Briefcase 2 ($12,000)' },
+      { x: -3050, y: 1460, label: 'Briefcase 3 ($12,000)' },
+      { x: -2713, y: 2788, label: 'Briefcase 4 ($12,000)' },
+      { x: -1646, y: 5148, label: 'Briefcase 5 ($12,000)' },
+      { x: 3081, y: -4468, label: 'Briefcase 6 ($12,000)' },
+      { x: 2845, y: -3625, label: 'Briefcase 7 ($25,000)' },
+      { x: 1266, y: -2856, label: 'Briefcase 8 ($12,000)' },
+      { x: -161, y: -3150, label: 'Briefcase 9 ($12,000)' },
+      { x: -942, y: -3271, label: 'Briefcase 10 ($15,000)' },
+      { x: -1834, y: -3043, label: 'Briefcase 11 ($12,000)' },
+    ],
+  },
+  {
+    stepId: '11-1',
+    name: 'Submarine Parts',
+    icon: '🔩',
+    color: '#e8923a',
+    locations: [
+      { x: -1051, y: 6518, label: 'Sub Part 1' },
+      { x: -460, y: 6322, label: 'Sub Part 2' },
+      { x: 212, y: 6740, label: 'Sub Part 3' },
+      { x: 1301, y: 7058, label: 'Sub Part 4' },
+      { x: 2780, y: -3994, label: 'Sub Part 5' },
+      { x: 2270, y: -2467, label: 'Sub Part 6' },
+      { x: 1550, y: -2908, label: 'Sub Part 7' },
+      { x: 495, y: -3065, label: 'Sub Part 8' },
+      { x: -235, y: -3151, label: 'Sub Part 9' },
+      { x: -997, y: -3405, label: 'Sub Part 10' },
+      { x: -1761, y: -3166, label: 'Sub Part 11' },
+      { x: -2545, y: -2718, label: 'Sub Part 12' },
+      { x: -3127, y: -2083, label: 'Sub Part 13' },
+      { x: -3484, y: -1270, label: 'Sub Part 14' },
+      { x: -3469, y: -630, label: 'Sub Part 15' },
+      { x: -3358, y: 93, label: 'Sub Part 16' },
+      { x: -3205, y: 635, label: 'Sub Part 17' },
+      { x: -3084, y: 1396, label: 'Sub Part 18' },
+      { x: -2920, y: 2050, label: 'Sub Part 19' },
+      { x: -2781, y: 2680, label: 'Sub Part 20' },
+      { x: -2562, y: 3395, label: 'Sub Part 21' },
+      { x: -2255, y: 3970, label: 'Sub Part 22' },
+      { x: -1928, y: 4576, label: 'Sub Part 23' },
+      { x: -1570, y: 5211, label: 'Sub Part 24' },
+      { x: -1197, y: 5767, label: 'Sub Part 25' },
+      { x: -756, y: 6288, label: 'Sub Part 26' },
+      { x: 3075, y: -4879, label: 'Sub Part 27' },
+      { x: 3163, y: -4226, label: 'Sub Part 28' },
+      { x: 2959, y: -3510, label: 'Sub Part 29' },
+      { x: 2651, y: -2894, label: 'Sub Part 30' },
+    ],
+  },
+];
