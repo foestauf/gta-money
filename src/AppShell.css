@@ -1,0 +1,39 @@
+.app-shell-nav {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 12px 0;
+  margin-bottom: 8px;
+  border-bottom: 1px solid var(--border);
+}
+
+.app-shell-brand {
+  font-family: Impact, 'Arial Narrow', 'Haettenschweiler', sans-serif;
+  font-size: 20px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--text-heading);
+}
+
+.app-shell-games {
+  display: flex;
+  gap: 8px;
+  margin-left: auto;
+}
+
+.app-shell-game-link {
+  padding: 6px 12px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text);
+  text-decoration: none;
+  font-size: 13px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.app-shell-game-link.active {
+  border-color: var(--accent, var(--text-heading));
+  color: var(--accent, var(--text-heading));
+}

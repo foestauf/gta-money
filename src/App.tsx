@@ -1,3 +1,6 @@
-import Gta5Page from './games/gta5/Gta5Page';
+import { RouterProvider } from 'react-router/dom';
+import { router } from './routes';
 
-export default Gta5Page;
+export default function App() {
+  return <RouterProvider router={router} />;
+}
