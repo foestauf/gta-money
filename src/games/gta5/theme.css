@@ -1,0 +1,8 @@
+[data-game="gta5"] {
+  --michael: #4a90d9;
+  --franklin: #3ddc84;
+  --trevor: #e8923a;
+  --gold: #f0c040;
+  --gold-dim: rgba(240, 192, 64, 0.15);
+  --accent: var(--gold);
+}

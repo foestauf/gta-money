@@ -1,0 +1,16 @@
+[data-game="rdr2"] {
+  --bg: #1a140d;
+  --bg-card: #261c12;
+  --bg-card-hover: #32261a;
+  --bg-input: #2d2317;
+  --border: #4a3a26;
+  --text: #ddc9a8;
+  --text-muted: #9c8e72;
+  --text-heading: #f5e8d0;
+
+  --rdr-cream: #e8d8b3;
+  --rdr-leather: #8b5a2b;
+  --rdr-blood: #9b2c2c;
+  --rdr-parchment: #d6c197;
+  --accent: var(--rdr-blood);
+}

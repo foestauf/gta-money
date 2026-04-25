@@ -1,5 +1,6 @@
 import { useState, lazy, Suspense } from 'react';
 import '../../App.css';
+import './theme.css';
 import { phases, tips, type Step, type MapIcon } from '../../data/guide';
 import { useGuideProgress } from '../../hooks/useGuideProgress';
 
