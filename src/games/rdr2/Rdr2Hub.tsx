@@ -1,6 +1,7 @@
 import { Link } from 'react-router';
 import './Rdr2Hub.css';
 import './theme.css';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 interface RealCard {
   to: string;
@@ -26,6 +27,7 @@ const stubs: StubCard[] = [
 ];
 
 export default function Rdr2Hub() {
+  useDocumentTitle(['RDR2']);
   return (
     <section className="rdr2-hub">
       <h1 className="rdr2-hub-title">Red Dead Redemption 2</h1>

@@ -3,6 +3,7 @@ import '../../App.css';
 import './theme.css';
 import { phases, tips, type Step, type MapIcon } from '../../data/guide';
 import { useGuideProgress } from '../../hooks/useGuideProgress';
+import { useDocumentTitle } from '../../hooks/useDocumentTitle';
 
 const MapView = lazy(() => import('../../components/MapView'));
 
@@ -183,6 +184,8 @@ function Gta5Page() {
   } = useGuideProgress();
 
   const [mapOpen, setMapOpen] = useState(false);
+
+  useDocumentTitle(['Money Guide', 'GTA V']);
 
   const allDone = phaseProgress.every(p => p.complete);
 

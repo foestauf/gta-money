@@ -1,6 +1,7 @@
 import { useMemo, useState } from 'react';
 import type { TrackerDef } from './types';
 import { useTrackerProgress } from './useTrackerProgress';
+import { useDocumentTitle } from '../hooks/useDocumentTitle';
 import './ChecklistTracker.css';
 
 interface Props {
@@ -37,6 +38,11 @@ export default function ChecklistTracker({ tracker }: Props) {
     }
     return [...map.entries()];
   }, [filtered]);
+
+  useDocumentTitle([
+    tracker.title,
+    tracker.game === 'rdr2' ? 'RDR2' : 'GTA V',
+  ]);
 
   return (
     <section className="checklist-tracker">
