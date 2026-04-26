@@ -4,6 +4,8 @@ import Gta5Page from './games/gta5/Gta5Page';
 import Rdr2Layout from './games/rdr2/Rdr2Layout';
 import Rdr2Hub from './games/rdr2/Rdr2Hub';
 import IndexRedirect from './IndexRedirect';
+import ChecklistTracker from './trackers/ChecklistTracker';
+import { herbs } from './games/rdr2/trackers/herbs';
 
 export const router = createBrowserRouter([
   {
@@ -17,7 +19,7 @@ export const router = createBrowserRouter([
         Component: Rdr2Layout,
         children: [
           { index: true, Component: Rdr2Hub },
-          { path: 'herbs', element: <div>Herbs tracker (placeholder)</div> },
+          { path: 'herbs', element: <ChecklistTracker tracker={herbs} /> },
           { path: 'horses', element: <div>Horses tracker (placeholder)</div> },
         ],
       },
