@@ -22,3 +22,6 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Playwright MCP smoke-test artifacts
+.playwright-mcp/
