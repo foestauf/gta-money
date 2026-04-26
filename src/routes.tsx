@@ -1,6 +1,8 @@
 import { createBrowserRouter } from 'react-router';
 import AppShell from './AppShell';
 import Gta5Page from './games/gta5/Gta5Page';
+import Rdr2Layout from './games/rdr2/Rdr2Layout';
+import Rdr2Hub from './games/rdr2/Rdr2Hub';
 import IndexRedirect from './IndexRedirect';
 
 export const router = createBrowserRouter([
@@ -12,8 +14,9 @@ export const router = createBrowserRouter([
       { path: 'gta5', Component: Gta5Page },
       {
         path: 'rdr2',
+        Component: Rdr2Layout,
         children: [
-          { index: true, element: <div>RDR2 hub (placeholder)</div> },
+          { index: true, Component: Rdr2Hub },
           { path: 'herbs', element: <div>Herbs tracker (placeholder)</div> },
           { path: 'horses', element: <div>Horses tracker (placeholder)</div> },
         ],

@@ -1,0 +1,104 @@
+.rdr2-hub {
+  padding: 16px 0 32px;
+}
+
+.rdr2-hub-title {
+  font-family: Impact, 'Arial Narrow', 'Haettenschweiler', sans-serif;
+  font-size: 36px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: var(--accent, var(--text-heading));
+  text-align: center;
+  margin: 8px 0 4px;
+}
+
+.rdr2-hub-subtitle {
+  text-align: center;
+  color: var(--text-muted);
+  margin: 0 0 24px;
+}
+
+.rdr2-hub-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.rdr2-hub-card {
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 16px;
+  background: var(--bg-card);
+  color: var(--text);
+  text-decoration: none;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.rdr2-hub-card:hover {
+  background: var(--bg-card-hover);
+  border-color: var(--accent, var(--text-heading));
+}
+
+.rdr2-hub-card.disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.rdr2-hub-card.disabled:hover {
+  background: var(--bg-card);
+  border-color: var(--border);
+}
+
+.rdr2-hub-card-title {
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-heading);
+  margin: 0 0 6px;
+}
+
+.rdr2-hub-card-desc {
+  color: var(--text-muted);
+  font-size: 13px;
+  margin: 0;
+}
+
+.rdr2-hub-card-pill {
+  display: inline-block;
+  font-size: 10px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: var(--text-muted);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 1px 8px;
+  margin-top: 8px;
+}
+
+.rdr2-tracker-nav {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  padding: 8px 0 16px;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 16px;
+}
+
+.rdr2-tracker-nav a {
+  padding: 4px 10px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: var(--bg-card);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.rdr2-tracker-nav a.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
