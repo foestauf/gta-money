@@ -6,6 +6,7 @@ import Rdr2Hub from './games/rdr2/Rdr2Hub';
 import IndexRedirect from './IndexRedirect';
 import ChecklistTracker from './trackers/ChecklistTracker';
 import { herbs } from './games/rdr2/trackers/herbs';
+import { horses } from './games/rdr2/trackers/horses';
 
 export const router = createBrowserRouter([
   {
@@ -20,7 +21,7 @@ export const router = createBrowserRouter([
         children: [
           { index: true, Component: Rdr2Hub },
           { path: 'herbs', element: <ChecklistTracker tracker={herbs} /> },
-          { path: 'horses', element: <div>Horses tracker (placeholder)</div> },
+          { path: 'horses', element: <ChecklistTracker tracker={horses} /> },
         ],
       },
       { path: '*', Component: IndexRedirect },
