@@ -1,7 +1,7 @@
 import { useState, useCallback, useMemo } from 'react';
 import { phases } from '../data/guide';
 
-const STORAGE_KEY = 'gta-money-progress';
+const STORAGE_KEY = 'tracker:gta5:money';
 
 function loadCompleted(): Set<string> {
   try {
